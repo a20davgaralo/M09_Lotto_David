@@ -1,7 +1,6 @@
-package principal;
+package principal.executorScheduled;
 
 public class Sorteig  implements Runnable{
-
 
     public static int[] generateRandom() {
         int[] numArray = new int[7];
@@ -22,11 +21,11 @@ public class Sorteig  implements Runnable{
 
     public static void printLotto() {
         int result[] = generateRandom();
-        System.out.println("Result of the lottery: ");
+        //System.out.println("Result of the lottery: ");
         for (int i = 0; i < result.length; i++) {
             System.out.print(result[i] + " ");
         }
-        System.out.println("\n");
+        //System.out.println("\n");
     }
 
     public void run() {

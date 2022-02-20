@@ -1,4 +1,4 @@
-package principal;
+package principal.executorScheduled;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -10,9 +10,9 @@ public class MostraSorteigsExecutor {
 
     public static void main(String[] args) {
 
-        ScheduledExecutorService serveiPrograma = Executors.newSingleThreadScheduledExecutor();
+       ScheduledExecutorService serveiPrograma = Executors.newSingleThreadScheduledExecutor();
 
-        serveiPrograma.scheduleAtFixedRate(new Sorteig(), 0, TEMPS_SORTEIG, TimeUnit.SECONDS);
+      serveiPrograma.scheduleAtFixedRate(new Sorteig(), TEMPS_SORTEIG, TEMPS_SORTEIG, TimeUnit.SECONDS);
 
     }
 }
