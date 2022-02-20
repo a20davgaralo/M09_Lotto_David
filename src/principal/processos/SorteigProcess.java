@@ -14,14 +14,12 @@ public class SorteigProcess {
 
         print(sortida.getInputStream());
 
-
     }
 
-    //Redireccionem la sortida de l'InputStream a un buffer de lectura i l'anem mostrant per pantalla tal com va sortint
     private static void print(InputStream input) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(input));
         String line = null;
-        while ((line = in.readLine()) != null) {
+        while((line = in.readLine()) != null ){
             System.out.println(line);
         }
         in.close();
